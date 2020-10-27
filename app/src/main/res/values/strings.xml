@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">RedHunter</string>
+
+    <string-array name="Jabatan">
+        <item>coo</item>
+        <item>cto</item>
+        <item>ob</item>
+        <item>ga</item>
+        <item>its</item>
+        <item>trainer</item>
+        <item>cs</item>
+
+    </string-array>
+
+</resources>

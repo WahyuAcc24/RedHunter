@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_pesanan_konsumen"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="56dp"
+    app:layout_behavior="com.google.android.material.BottomSheet">
+
+
+    <TextView
+        android:id="@+id/tvInventory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:drawablePadding="16dp"
+        android:drawableLeft="@drawable/lemari"
+        android:text="Inventory Barang"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/tvHistoryPengajuanBarangHrd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:drawablePadding="16dp"
+        android:drawableLeft="@drawable/file"
+        android:text="History Pengajuan Barang"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/tvInventory"
+        />
+
+    <TextView
+        android:id="@+id/tvHistoryUserHrd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:drawablePadding="16dp"
+        android:drawableLeft="@drawable/userhistory"
+        android:text="List User"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/tvHistoryPengajuanBarangHrd"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

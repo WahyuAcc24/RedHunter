@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/userdev"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kelola User"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nama_user_update"
+        android:textColor="#c40004"
+        android:hint="Nama"
+        android:layout_marginTop="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/floating_hint_margin"
+        android:layout_gravity="center_vertical|center_horizontal"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="#c40004"
+            android:inputType="text"
+            android:layout_marginTop="@dimen/floating_hint_margin"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/edtupdatenamauser"
+            android:layout_gravity="center_vertical|center_horizontal"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nama_jk"
+        android:layout_marginTop="20dp"
+        android:textColor="#c40004"
+        android:hint="Jenis Kelamin"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/floating_hint_margin"
+        android:layout_gravity="center_vertical|center_horizontal"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="#c40004"
+            android:inputType="text"
+            android:layout_marginTop="@dimen/floating_hint_margin"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/edtupdatejkuser"
+            android:layout_gravity="center_vertical|center_horizontal"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nama_divisi_update"
+        android:layout_marginTop="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/floating_hint_margin"
+        android:layout_gravity="center_vertical|center_horizontal"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="#c40004"
+            android:inputType="text"
+            android:layout_marginTop="@dimen/floating_hint_margin"
+            android:hint="CEO/CTO/COO/HRD dll"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/edtupdatenamadivisi"
+            android:layout_gravity="center_vertical|center_horizontal"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nama_pass"
+        android:textColor="#c40004"
+        android:layout_marginTop="20dp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#c40004"
+        android:hint="Password"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/floating_hint_margin"
+        android:layout_gravity="center_vertical|center_horizontal"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="#c40004"
+            android:inputType="textPassword"
+            android:layout_marginTop="@dimen/floating_hint_margin"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/edtupdatepassuser"
+            android:layout_gravity="center_vertical|center_horizontal"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nama_ulg_pass"
+        android:textColor="#c40004"
+        android:layout_marginTop="20dp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#c40004"
+        android:hint="Ulangi Password"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/floating_hint_margin"
+        android:layout_gravity="center_vertical|center_horizontal"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="#c40004"
+            android:inputType="textPassword"
+            android:layout_marginTop="@dimen/floating_hint_margin"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/edtupdateulgpassuser"
+            android:layout_gravity="center_vertical|center_horizontal"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_login"
+        android:layout_marginTop="30dp"
+        android:textColor="#fff"
+        android:text="Update data user"
+        android:id="@+id/btnupdateRegUser"
+        />
+
+
+
+</LinearLayout>
+</ScrollView>

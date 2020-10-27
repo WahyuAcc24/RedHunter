@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/barang"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pengajuan Barang"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/p_nama_barang"
+            android:layout_marginTop="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/floating_hint_margin"
+            android:layout_gravity="center_vertical|center_horizontal"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:inputType="text"
+                android:layout_marginTop="@dimen/floating_hint_margin"
+                android:hint="Nama Barang"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/edtpnamabrg"
+                android:layout_gravity="center_vertical|center_horizontal"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/p_nama_satuan_barang"
+            android:hint=""
+            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/floating_hint_margin"
+            android:layout_gravity="center_vertical|center_horizontal"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColor="#c40004"
+                android:inputType="text"
+                android:layout_marginTop="@dimen/floating_hint_margin"
+                android:hint="Lusin/gross/kodi/rim/lembar/ dll"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/edtpnamasatuanbrg"
+                android:layout_gravity="center_vertical|center_horizontal"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/p_nama_harga"
+            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/floating_hint_margin"
+            android:layout_gravity="center_vertical|center_horizontal"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColor="#c40004"
+                android:inputType="number"
+                android:layout_marginTop="@dimen/floating_hint_margin"
+                android:hint="Harga Barang"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/edtphargabrg"
+                android:maxLength="13"
+                android:layout_gravity="center_vertical|center_horizontal"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/p_nama_jmlh_brg"
+            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/floating_hint_margin"
+            android:layout_gravity="center_vertical|center_horizontal"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColor="#c40004"
+                android:inputType="number"
+                android:layout_marginTop="@dimen/floating_hint_margin"
+                android:hint="Jumlah Barang"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/edtpjmlhbrg"
+                android:layout_gravity="center_vertical|center_horizontal"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/alasan"
+            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/floating_hint_margin"
+            android:layout_gravity="center_vertical|center_horizontal"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColor="#c40004"
+                android:inputType="text"
+                android:layout_marginTop="@dimen/floating_hint_margin"
+                android:hint="Alasan Pengajuan"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/edtalasan"
+                android:layout_gravity="center_vertical|center_horizontal"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_login"
+            android:layout_marginTop="30dp"
+            android:textColor="#fff"
+            android:text="Ajukan permintaan"
+            android:id="@+id/btnpengajuanbrg"
+            />
+
+    </LinearLayout>
+</ScrollView>

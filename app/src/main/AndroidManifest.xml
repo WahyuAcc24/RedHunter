@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wr15.redhunter">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <application
+        android:allowBackup="true"
+        android:name=".AppController"
+        android:requestLegacyExternalStorage="true"
+        android:usesCleartextTraffic="true"
+        android:icon="@mipmap/ic_launcher_red"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_red_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".PilihanUserActivity"/>
+        <activity android:name=".Hrd.LoginHrdActivity"/>
+        <activity android:name=".Develop.HomeActivity"/>
+        <activity android:name="com.wr15.redhunter.Develop.Barang.FormKelolaBarang"/>
+        <activity android:name="com.wr15.redhunter.Develop.User.FormKelolaUser"/>
+        <activity android:name="com.wr15.redhunter.Develop.User.DetailHistoryUser"/>
+        <activity android:name="com.wr15.redhunter.Develop.Barang.DetailHistoryBrg"/>
+        <activity android:name="com.wr15.redhunter.Develop.Barang.UpdateBarangActivity"/>
+        <activity android:name="com.wr15.redhunter.Develop.User.UpdateUserActivity"/>
+        <activity android:name=".Karyawan.HomeKaryawanActivity"/>
+        <activity android:name=".Karyawan.FormPengajuanBarang"/>
+        <activity android:name=".Karyawan.DetailPengajuanBarang"/>
+        <activity
+            android:name=".Hrd.HomeHrdActivity" />
+        <activity android:name=".Hrd.DetailHrdPengajuanBarang"/>
+        <activity android:name=".Hrd.DetailHistoryInventory"/>
+        <activity android:name=".CEO.LoginCeoActivity"/>
+        <activity android:name=".CEO.HomeCeoActivity"/>
+        <activity android:name=".Karyawan.DetailInventoryKaryawan"/>
+        <activity android:name=".CEO.DetailHistoryInventoryCeo"/>
+        <activity android:name=".CEO.DetailHistoryUserCeo"/>
+        <activity android:name=".Hrd.FormKelolaUserHrd"/>
+        <activity android:name=".GA.HomeGaActivity"/>
+        <activity android:name=".GA.DetailHistoryBrgGa"/>
+        <activity android:name=".GA.FormKelolaBarangGa"/>
+        <activity android:name=".GA.LoginGaActivity"/>
+        <activity android:name=".GA.DetailPengajuanBarangGa"/>
+        <activity android:name=".GA.FormPengajuanBarangGa"/>
+        <activity android:name=".Hrd.rekappdf.RekapTrainerActivity"/>
+        <activity android:name=".Hrd.rekappdf.RekapObActivity"/>
+        <activity android:name=".Hrd.rekappdf.RekapItsActivity"/>
+        <activity android:name=".Hrd.rekappdf.RekapGaActivity"/>
+        <activity android:name=".Hrd.rekappdf.RekapCsActivity"/>
+        <activity android:name=".Hrd.rekappdf.RekapCooActivity"/>
+        <activity android:name=".Hrd.PilihanUserPengajuan"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+
+
+    </application>
+
+</manifest>

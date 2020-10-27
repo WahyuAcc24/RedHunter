@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/swipedetailhistorypbrg"
+    >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/barang"
+        android:layout_gravity="center_horizontal"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detail Pengajuan Barang"
+        android:textColor="#000"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtnamapbrgdetail"
+        android:text="nama"
+        android:layout_marginTop="50dp"
+        android:textColor="#000"
+        android:layout_marginStart="20dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtsatuanpbrgdetail"
+        android:text="satuan"
+        android:layout_marginTop="50dp"
+        android:textColor="#000"
+        android:layout_marginStart="20dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtjmlhpbrgdetail"
+        android:text="Jumlah barang"
+        android:layout_marginTop="50dp"
+        android:textColor="#000"
+        android:layout_marginStart="20dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txthargapbrgdetail"
+        android:text="harga barang"
+        android:layout_marginTop="50dp"
+        android:textColor="#000"
+        android:layout_marginStart="20dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtalasanpengajuandetail"
+        android:text="alasan"
+        android:layout_marginTop="50dp"
+        android:textColor="#000"
+        android:layout_marginStart="20dp"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:text="status error"
+        android:textColor="#fff"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="80dp"
+        android:id="@+id/btnpengajuanbrg"
+        />
+
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:background="@color/merah"-->
+<!--        android:text="permintaan hapus barang"-->
+<!--        android:textColor="#fff"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:id="@+id/btnhapusreq"-->
+<!--        />-->
+
+
+</LinearLayout>
+</ScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
